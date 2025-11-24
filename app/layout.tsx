@@ -31,12 +31,21 @@ export const metadata: Metadata = {
     siteName: "anjana784",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "/anjana784-logo.png",
+        width: 1200,
+        height: 630,
+        alt: "anjana784 — 3D Web Engineer",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "anjana784 — 3D Web Engineer",
     description: "Building digital worlds with math, shaders, and code.",
     creator: "@anjana784",
+    images: ["/anjana784-logo.png"],
   },
 };
 
