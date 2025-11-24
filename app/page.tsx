@@ -20,8 +20,8 @@ const HomePage = () => {
       <div className="max-w-3xl mx-auto px-6 py-20 flex flex-col gap-24">
         {/* Hero Section */}
         <section className="flex flex-col gap-6">
-          <div className="flex items-center gap-6">
-            <div className="relative w-24 h-24 rounded-full overflow-hidden border-2 border-[#26272B] shrink-0">
+          <div className="flex items-center gap-4 md:gap-6">
+            <div className="relative w-16 h-16 md:w-24 md:h-24 rounded-full overflow-hidden border-2 border-[#26272B] shrink-0">
               <Image
                 src="/anjana784-logo.png"
                 alt="anjana784 Avatar"
@@ -29,7 +29,7 @@ const HomePage = () => {
                 className="object-cover"
               />
             </div>
-            <h1 className="text-5xl md:text-7xl font-bold text-[#E6E6E7] tracking-tight">
+            <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold text-[#E6E6E7] tracking-tight">
               anjana784
             </h1>
           </div>
