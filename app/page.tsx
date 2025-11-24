@@ -121,12 +121,12 @@ const HomePage = () => {
             {[
               {
                 name: "Facebook",
-                url: "https://facebook.com/anjana784",
+                url: "https://web.facebook.com/anjana784.dev",
                 icon: Facebook,
               },
               {
                 name: "Instagram",
-                url: "https://instagram.com/anjana.784",
+                url: "https://instagram.com/anjana784official",
                 icon: Instagram,
               },
               {
@@ -136,7 +136,7 @@ const HomePage = () => {
               },
               {
                 name: "TikTok",
-                url: "https://tiktok.com/@anjana784",
+                url: "https://tiktok.com/@anjana784official",
                 icon: Video,
               },
               {
@@ -145,8 +145,8 @@ const HomePage = () => {
                 icon: Linkedin,
               },
               {
-                name: "X (Twitter)",
-                url: "https://twitter.com/anjana784",
+                name: "X",
+                url: "https://x.com/anjana784",
                 icon: Twitter,
               },
             ].map((link) => (
