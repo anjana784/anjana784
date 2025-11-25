@@ -50,6 +50,35 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "anjana784",
+  url: "https://anjana784.dev",
+  image: "https://anjana784.dev/anjana784-logo.png",
+  description: "Building digital worlds with math, shaders, and code.",
+  jobTitle: "3D Web Engineer",
+  knowsAbout: [
+    "Three.js",
+    "WebGL",
+    "WebGPU",
+    "GLSL shaders",
+    "Computer Graphics",
+    "Real-time Rendering",
+    "3D Mathematics",
+  ],
+  sameAs: [
+    "https://github.com/anjana784",
+    "https://linkedin.com/in/anjana784",
+    "https://twitter.com/anjana784",
+    "https://instagram.com/anjana784official",
+    "https://web.facebook.com/anjana784.dev",
+    "https://tiktok.com/@anjana784official",
+    "https://blog.anjana784.dev",
+  ],
+  email: "hello@anjana784.dev",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -60,6 +89,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         {children}
       </body>
     </html>
