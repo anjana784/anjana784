@@ -15,6 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "anjana784 — 3D Web Engineer",
   description: "Building digital worlds with math, shaders, and code.",
+  metadataBase: new URL("https://anjana784.dev"),
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
@@ -33,7 +34,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/anjana784-logo.png",
+        url: "https://anjana784.dev/anjana784-logo.png",
         width: 1200,
         height: 630,
         alt: "anjana784 — 3D Web Engineer",
@@ -45,7 +46,7 @@ export const metadata: Metadata = {
     title: "anjana784 — 3D Web Engineer",
     description: "Building digital worlds with math, shaders, and code.",
     creator: "@anjana784",
-    images: ["/anjana784-logo.png"],
+    images: ["https://anjana784.dev/anjana784-logo.png"],
   },
 };
 
