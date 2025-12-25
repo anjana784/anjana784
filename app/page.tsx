@@ -1,6 +1,17 @@
+"use client";
+import { Experience } from "@/components/experience";
+import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
+
 const HomePage = () => {
   return (
-    <main className="min-h-screen bg-[#0B0B0C] text-[#A7A7AA] selection:bg-[#D4A42E] selection:text-[#0B0B0C] font-sans"></main>
+    <div className="w-dvw h-dvh">
+      <Canvas>
+        <PerspectiveCamera makeDefault position={[0, 0, 5]} />
+        <OrbitControls />
+        <Experience />
+      </Canvas>
+    </div>
   );
 };
 
