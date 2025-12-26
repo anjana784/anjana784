@@ -1,3 +1,5 @@
+"use client";
+import * as THREE from "three";
 import { Base, Geometry, Subtraction } from "@react-three/csg";
 
 export const Portal = () => {
@@ -12,7 +14,17 @@ export const Portal = () => {
             <cylinderGeometry args={[0.8, 0.8, 0.3, 64]} />
           </Subtraction>
         </Geometry>
-        <meshStandardMaterial color="green" />
+
+        <meshPhysicalMaterial
+          metalness={1}
+          roughness={0.25}
+          clearcoat={0.6}
+          clearcoatRoughness={0.15}
+          envMapIntensity={1.3}
+          // keep the warm glow as a subtle accent
+          emissive={new THREE.Color("#ffb36b")}
+          emissiveIntensity={0.35}
+        />
       </mesh>
     </>
   );

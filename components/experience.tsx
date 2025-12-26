@@ -1,5 +1,6 @@
 "use client";
 
+import { Environment } from "@react-three/drei";
 import { Glass } from "./glass";
 import { Lense } from "./lense";
 import { Lights } from "./lights";
@@ -36,6 +37,7 @@ export const Experience = () => {
   // return <Space />;
   return (
     <>
+      <Environment preset="city" />
       <Lights />
       <Glass />
       <Portal />
