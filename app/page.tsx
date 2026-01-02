@@ -1,47 +1,29 @@
 "use client";
-import * as React from "react";
 import { Experience } from "@/components/experience";
-import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
+import {
+  CameraShake,
+  OrbitControls,
+  PerspectiveCamera,
+} from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import { PerfHeadless, usePerf } from "r3f-perf";
-
-const PerfLogger = () => {
-  const gl = usePerf((s) => s.gl);
-  const log = usePerf((s) => s.log);
-  const getReport = usePerf((s) => s.getReport);
-
-  React.useEffect(() => {
-    if (!gl) return;
-    console.log(gl, log, getReport());
-  }, [gl, log, getReport]);
-
-  return null;
-};
-
-const PerfHook = () => {
-  const [ready, setReady] = React.useState(false);
-
-  React.useEffect(() => {
-    // Ensure PerfHeadless has mounted/initialized before subscribing via usePerf()
-    setReady(true);
-  }, []);
-
-  return (
-    <>
-      <PerfHeadless />
-      {ready ? <PerfLogger /> : null}
-    </>
-  );
-};
 
 const HomePage = () => {
   return (
     <div className="w-dvw h-dvh no-scrollbar">
       <Canvas>
-        <PerfHook />
         <PerspectiveCamera makeDefault position={[0, 0, 8]} />
         <OrbitControls />
         <Experience />
+        <CameraShake
+          maxYaw={0.05} // Max amount camera can yaw in either direction
+          maxPitch={0.05} // Max amount camera can pitch in either direction
+          maxRoll={0.05} // Max amount camera can roll in either direction
+          yawFrequency={0.05} // Frequency of the the yaw rotation
+          pitchFrequency={0.2} // Frequency of the pitch rotation
+          rollFrequency={0.2} // Frequency of the roll rotation
+          intensity={1} // initial intensity of the shake
+          decayRate={0.65} // if decay = true this is the rate at which intensity will reduce at />
+        />
       </Canvas>
     </div>
   );

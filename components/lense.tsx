@@ -1,7 +1,4 @@
 "use client";
-
-import * as THREE from "three";
-
 export const Lense = () => {
   return (
     <>
