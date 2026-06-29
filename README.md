@@ -2,9 +2,9 @@
   <samp>anjana784</samp>
 </p>
 
-Three.js & WebGL developer building at the intersection of real-time graphics, spatial computing, and GPU architecture.
+Three.js & WebGL developer building at the intersection of real-time graphics, and GPU architecture.
 
-I think of the browser as a compute medium with a visual output — not a document renderer.
+I think of the browser as a compute medium with a visual output.
 
 —
 
