@@ -2,9 +2,9 @@
   <samp>anjana784</samp>
 </p>
 
-#I build immersive web experiences with WebGL & Three.js.
+# I build immersive web experiences with WebGL & Three.js.
 
-##They render and respond in real time, and I build them to run smoothly on actual hardware.
+## They render and respond in real time, and I build them to run smoothly on actual hardware.
 
 —
 
