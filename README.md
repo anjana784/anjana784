@@ -2,9 +2,9 @@
   <samp>anjana784</samp>
 </p>
 
-Three.js & WebGL developer building at the intersection of real-time graphics, and GPU architecture.
+#I build immersive web experiences with WebGL & Three.js.
 
-I think of the browser as a compute medium with a visual output.
+##They render and respond in real time, and I build them to run smoothly on actual hardware.
 
 —
 
